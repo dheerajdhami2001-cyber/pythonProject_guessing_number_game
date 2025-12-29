@@ -1,67 +1,55 @@
-Higher or Lower: Flask Web Game
-A fun, interactive number-guessing game built using the Flask web framework. The game generates a random number, and the player must guess it by navigating to different URLs. Each guess provides visual feedback through dynamic text colors and animated GIFs to tell the player if they are too high, too low, or correct!
+# Higher-Lower Web Game
 
-demo.mp4
+A web-based "Guess the Number" game built with Python and the Flask framework. This application generates a random number between 1 and 9 and challenges the user to guess it by modifying the URL. It provides immediate visual feedback with fun GIFs and colored text to indicate if the guess is too high, too low, or correct.
 
+## Demo
 
-Key Features
-Dynamic Routing: Uses Flask's <int:number> route converter to capture player guesses directly from the URL.
+**[▶️ Click here to watch the project demo video](demo.mp4)**
 
-Visual Feedback: Features custom HTML styling with different colors (Red for too low, Blue for too high, Green for winning).
+## Key Features
 
-Giphy Integration: Displays fun, context-aware GIFs for every state of the game to improve user experience.
+-   **Random Number Generation:** A new target number (1-9) is generated every time the server starts.
+-   **Dynamic Routing:** Uses Flask's variable rules (`<int:number>`) to capture the user's guess directly from the URL bar.
+-   **Visual Feedback:** Displays different GIFs and styled HTML messages based on the game logic (Too High, Too Low, or Correct).
+-   **Debug Mode:** Runs with debug mode enabled for easier development and testing.
 
-Randomized Logic: Every time the server restarts, a new secret number between 1 and 9 is generated.
+## Prerequisites
 
-Technologies Used
-Python 3.x
+-   Python 3.x
+-   `pip` (Python package installer)
 
-Flask: A micro web framework for Python used to handle routing and server-side logic.
+## Installation & Setup
 
-HTML/Inline CSS: Used for styling the game interface within the Python script.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/dheerajdhami2001-cyber/higher-lower-flask.git
+    ```
+    *(Replace with your actual repository URL)*
 
-Project Setup
-1. Prerequisites
-Python 3.x installed.
+2.  **Navigate into the project directory:**
+    ```bash
+    cd higher-lower-flask
+    ```
 
-pip (Python package installer).
+3.  **Install Flask:**
+    You need to install the Flask framework to run the web server.
+    ```bash
+    pip install flask
+    ```
 
-2. Installation
-Clone the repository:
+4.  **Run the application:**
+    ```bash
+    python main.py
+    ```
 
-Bash
+## How to Play
 
-git clone https://github.com/dheerajdhami2001-cyber/higher-lower-flask.git
-Navigate into the project directory:
+1.  Once the script is running, you will see a message in your terminal like `Running on http://127.0.0.1:5000`.
+2.  Open your web browser and go to `http://127.0.0.1:5000/`. You will see the prompt to guess a number.
+3.  **To make a guess, add a forward slash and a number to the end of the URL.**
+    *   *Example:* To guess the number **5**, type: `http://127.0.0.1:5000/5`
+4.  The page will reload and tell you if your guess was too high, too low, or correct!
 
-Bash
+## Acknowledgments
 
-cd higher-lower-flask
-Install Flask:
-
-Bash
-
-pip install flask
-How to Play
-Run the script:
-
-Bash
-
-python main.py
-Open your browser: Go to http://127.0.0.1:5000/. You will see the "Guess a number between 1 to 9" home screen.
-
-Make a guess: To guess a number, add the number to the end of the URL in your browser's address bar.
-
-Example: To guess the number 5, change the URL to http://127.0.0.1:5000/5 and hit Enter.
-
-Follow the hints: The page will update to tell you if you need to go higher or lower. Keep changing the number in the URL until you find the winning number!
-
-Optimization & Potential Improvements
-HTML Templates: Currently, the HTML is written as strings inside the Python file. This could be moved to a templates/ folder using Flask's render_template for better code organization.
-
-Reset Button: Adding a button on the "Win" screen that redirects back to the home page to start a new game.
-
-Input Field: Instead of typing numbers into the URL bar, an HTML <form> could be added to the home page so users can type their guess into a box.
-
-Acknowledgments
-This project was inspired by and completed with the guidance of the 100 Days of Code: The Complete Python Pro Bootcamp by Dr. Angela Yu.
+This project was inspired by and completed with the guidance of the **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu.
