@@ -1,8 +1,8 @@
 Higher or Lower: Flask Web Game
 A fun, interactive number-guessing game built using the Flask web framework. The game generates a random number, and the player must guess it by navigating to different URLs. Each guess provides visual feedback through dynamic text colors and animated GIFs to tell the player if they are too high, too low, or correct!
 
-Demo
-(Note: To display your game in action, ensure your GIF is named demo.gif and located in the root folder of your repository.)
+demo.mp4
+
 
 Key Features
 Dynamic Routing: Uses Flask's <int:number> route converter to capture player guesses directly from the URL.
