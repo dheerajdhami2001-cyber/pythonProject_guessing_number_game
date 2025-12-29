@@ -4,7 +4,7 @@ A web-based "Guess the Number" game built with Python and the Flask framework. T
 
 ## Demo
 
-**[▶️ Click here to watch the project demo video](demo.mp4)**
+![Higher Lower Game Demo](demo.gif)
 
 ## Key Features
 
@@ -24,7 +24,7 @@ A web-based "Guess the Number" game built with Python and the Flask framework. T
     ```bash
     git clone https://github.com/dheerajdhami2001-cyber/higher-lower-flask.git
     ```
-    *(Replace with your actual repository URL)*
+    *(Note: Please replace `higher-lower-flask` with your actual repository name if it is different.)*
 
 2.  **Navigate into the project directory:**
     ```bash
